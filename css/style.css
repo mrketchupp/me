@@ -1,0 +1,95 @@
+/* Estilos generales */
+:root {
+    --raisin-black: #212224;
+    --onyx: #333639;
+    --timberwolf: #d9d5c9;
+    --maize: #ffc552;
+    --xl: 3rem;
+    --md: 1.8rem;
+    --sm: 1.4rem;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: var(--raisin-black);
+    color: var(--timberwolf);
+    margin: 0;
+}
+
+/* Estilo del menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilo del contenedor */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-template-rows: 2fr repeat(3, 124px );
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Estilo del perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: var(--onyx);
+    border-radius: 20px;
+}
+.profile-img {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+}
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.profile-name {
+    font-size: var(--xl);
+    line-height: 36px;
+    margin: 20px 0 0 0;
+}
+.profile-title {
+    font-size: var(--md);
+    line-height: 28px;
+}
+
+/* Estilo de las box's */
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: var(--onyx);
+}
+.box-title {
+    font-size: var(--xl) ;
+    line-height: 36px;
+}
+
+/* Estilo del footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.footer-text {
+    font-size: var(--sm);
+    line-height: 20px;
+}
