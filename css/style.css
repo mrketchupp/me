@@ -66,13 +66,24 @@ body {
 
 /* Estilo de las box's */
 .box {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 40px;
+    align-content: center;
     align-items: center;
     padding: 32px;
     border-radius: 20px;
     background-color: var(--onyx);
 }
+.box:hover {
+    cursor: pointer;
+}
+.box:hover .icon-hover{
+    stroke: var(--maize);
+}
+/* .box:hover .icon-github{
+    stroke: var(--maize);
+} */
 .box-title {
     font-size: var(--xl) ;
     line-height: 36px;
